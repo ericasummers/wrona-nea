@@ -1,10 +1,12 @@
 <div class="content">
 <h2>Welcome to Wrona Nea! || All the best news.</h2>
-<ul>
-{{#each model as |news-article|}}
-  {{news-tile news-article=news-article}}
+{{#each model.headlines as |headline|}}
+  {{headline.title}}
+{{/each}}
 
-  <!-- {{news-detail news-article=news-article}} -->
+<ul>
+{{#each model.articles as |news-article|}}
+  {{news-tile news-article=news-article}}
 {{/each}}
 </ul>
 
