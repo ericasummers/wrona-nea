@@ -83,3 +83,11 @@ li {
   z-index: -1;
   margin-left: 0;
 }
+
+.article-redirects {
+  font-size: 80%;
+}
+
+.article-redirects:hover {
+  font-size: 80%;
+}

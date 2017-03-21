@@ -11,7 +11,7 @@ export default Ember.Route.extend({
       //the articles need returned to be displayed on page, using .articles which is the array name in the response
       return Ember.RSVP.hash({
         articles: responseJSON.articles,
-        headlines: this.store.findAll('headline')
+        // headlines: this.store.findAll('headline')
       });
     });
   }

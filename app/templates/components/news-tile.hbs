@@ -1,6 +1,6 @@
 <li>
   {{#if isArticleShowing}}
-  <p><span class="shown-title" {{action 'articleHide'}}>{{news-article.title}}</span> by {{news-article.author}}<br><img src={{news-article.urlToImage}}><br>{{news-article.description}} - {{news-article.publishedAt}}</p>
+  <p><span class="shown-title" {{action 'articleHide'}}>{{news-article.title}}</span> by {{news-article.author}}<br><a href={{news-article.url}} class="article-redirects">Click to view article</a><br><img src={{news-article.urlToImage}}><br>{{news-article.description}} - {{news-article.publishedAt}}</p>
   {{else}}
     <span class="article-title" {{action 'articleShow'}}><img src={{news-article.urlToImage}} class="link-image">{{news-article.title}}</span>
   {{/if}}
