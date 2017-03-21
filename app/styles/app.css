@@ -1,3 +1,46 @@
+/*font-family: 'Nova Oval', cursive;
+font-family: 'Space Mono', monospace;
+font-family: 'Alegreya', serif;
+font-family: 'Orbitron', sans-serif;*/
+
+
+body {
+  margin: 0 auto;
+  background-color: #422735;
+  color: white;
+}
+
 img {
   width: 500px;
+}
+
+header {
+  /*font-family: 'Russo One', sans-serif;*/
+  font-family: 'Nova Oval', cursive;
+  font-size: 200%;
+  background: url('Orion.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  position: absolute;
+  background-attachment: fixed;
+  color: white;
+  text-align: right;
+  margin: 0px;
+  top: 0px;
+  height: 400px;
+}
+
+.header-text {
+  margin-top: 250px;
+  margin-right: 25px;
+
+}
+
+header p {
+  font-family: 'Orbitron', sans-serif;
+}
+
+.content {
+  margin-top: 400px;
 }
