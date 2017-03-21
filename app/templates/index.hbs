@@ -1,11 +1,12 @@
 <div class="content">
-<h2>Welcome to Wrona Nea!</h2>
-
-<p>All the best news.</p>
-
+<h2>Welcome to Wrona Nea! || All the best news.</h2>
+<ul>
 {{#each model as |news-article|}}
-  <p>{{news-article.title}} by {{news-article.author}}<br><img src={{news-article.urlToImage}}><br>{{news-article.description}} - {{news-article.publishedAt}}</p>
+  {{news-tile news-article=news-article}}
+
+  <!-- {{news-detail news-article=news-article}} -->
 {{/each}}
+</ul>
 
 {{#link-to 'contact'}}Contact Us{{/link-to}}
 <br>

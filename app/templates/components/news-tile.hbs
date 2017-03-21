@@ -1,1 +1,7 @@
-<p>{{news-article.title}}<br>{{news-article.article}} - {{news-article.date}}</p>
+<li>
+  {{#if isArticleShowing}}
+  <p><span class="shown-title" {{action 'articleHide'}}>{{news-article.title}}</span> by {{news-article.author}}<br><img src={{news-article.urlToImage}}><br>{{news-article.description}} - {{news-article.publishedAt}}</p>
+  {{else}}
+    <span class="article-title" {{action 'articleShow'}}><img src={{news-article.urlToImage}} class="link-image">{{news-article.title}}</span>
+  {{/if}}
+</li>

@@ -12,6 +12,7 @@ body {
 
 img {
   width: 500px;
+  margin: 5px;
 }
 
 header {
@@ -43,4 +44,42 @@ header p {
 
 .content {
   margin-top: 400px;
+  font-family: 'Space Mono', monospace;
+}
+
+.article-title, .shown-title {
+  cursor: pointer;
+  text-decoration: underline;
+  position: relative;
+  z-index: 0;
+}
+
+.article-title:hover, .shown-title:hover {
+  color: red;
+  text-decoration: underline;
+}
+
+a {
+  color: #CD326A;
+  font-size: 120%;
+}
+
+a:hover {
+  color: #52EA50;
+  font-size: 140%;
+}
+
+li {
+  margin: 25px;
+  font-size: 120%;
+}
+
+.link-image {
+  position: absolute;
+  opacity: 0.5;
+  height: 50px;
+  width: 1000px;
+  margin: 5px;
+  z-index: -1;
+  margin-left: 0;
 }
