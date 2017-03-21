@@ -1,0 +1,15 @@
+<div class="content">
+<h2>HEADLINES</h2>
+
+{{#each model as |headline|}}
+  {{headline.title}}<br>
+{{/each}}
+
+<br><br>
+
+{{#link-to 'index'}}Home{{/link-to}}
+<br>
+{{#link-to 'contact'}}Contact Us{{/link-to}}
+<br>
+{{#link-to 'about'}}About Us{{/link-to}}
+</div>

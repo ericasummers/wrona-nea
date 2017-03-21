@@ -1,8 +1,7 @@
 <div class="content">
 <h2>Welcome to Wrona Nea! || All the best news.</h2>
-{{#each model.headlines as |headline|}}
-  {{headline.title}}
-{{/each}}
+
+{{#link-to 'headlines'}}HEADLINES{{/link-to}}
 
 <ul>
 {{#each model.articles as |news-article|}}
