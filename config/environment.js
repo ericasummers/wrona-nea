@@ -17,6 +17,13 @@ module.exports = function(environment) {
       }
     },
 
+    firebase: {
+      apiKey: "AIzaSyDO1wSEjHopvlSIhOMSdlMR4DvGy1nBlWY",
+      authDomain: "wrona-nea.firebaseapp.com",
+      databaseURL: "https://wrona-nea.firebaseio.com",
+      storageBucket: "wrona-nea.appspot.com"
+    },
+
     APP: {
       // Here you can pass flags/options to your application instance
       // when it is created

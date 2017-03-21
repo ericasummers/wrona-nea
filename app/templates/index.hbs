@@ -1,1 +1,11 @@
-{{outlet}}
+<h2>Welcome to Wrona Nea!</h2>
+
+<p>All the best news.</p>
+
+{{#each model as |news-article|}}
+  <p>{{news-article.title}}<br>{{news-article.article}} - {{news-article.date}}</p>
+{{/each}}
+
+{{#link-to 'contact'}}Contact Us{{/link-to}}
+<br>
+{{#link-to 'about'}}About Us{{/link-to}}
